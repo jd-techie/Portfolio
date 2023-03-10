@@ -244,9 +244,9 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: left;
     flex-direction: column;
     padding: 0 40px;
-    text-align: center;
     transition: height 0.5s;
  }
 .layer h3{
