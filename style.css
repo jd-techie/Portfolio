@@ -342,11 +342,12 @@ form input, form textarea{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
-
 }
+
 .copyrights i{
     color: #00334d;
 }
+
 /* ---------------------media for smll screen........... */
 nav .fas{
     display: none;
