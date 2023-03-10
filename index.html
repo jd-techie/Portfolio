@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@300&family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"> <span class="mySpan">J</span><span class="mySpan1">D</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1 class="myh1">Hello Folks, I'm<br><span class="mySpan2">Dinesh</span> J</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello and welcome 😊, I'm <strong> Dinesh J</strong>, and I am a web developer who
+                    has worked with versatile technologies that are involved in the development 
+                    of websites. I am a very passionate learner and love to make websites, apps, etc.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML/CSS/JavaScript</li>
+                            <li><span>Web Frameworks</span><br>Bootstrap/Express.js</li>
+                            <li><span>Other Tech</span><br>Node.js/MongoDB/Npm</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Web Development from Udemy</li>
+                            <li><span>2021</span><br>BE from NEC Erode, TamilNadu</li>
+                            <li><span>2017</span><br>HSC from SHSS Erode, TamilNadu</li>
+                            <li><span>2015</span><br>SSLC from SHSS Erode, TamilNadu</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br><strong>Graduate Apprentice Trainee - Production </strong><br>
+                                <ul class="ex-1">
+                                    <li>* Maintaining supervision over manufacturing processes to ensure that the quality of work is done in a safe and efficient
+                                        manner.</li>
+                                    <li>* Diagnosing problems with the production line and liaising with other engineers to provide recommendations as to how to
+                                        improve the production process as well as suggestions for developing plans to improve the process.</li>
+                                    <li>* Conducting an analysis of every aspect of a production process and recommending improvements in all areas.</li>
+                                    <li>* As part of the I4 team, I actively participated in I4 activities as well as updated the production data on SAP ME for
+                                        each shift as part of my work.</li></li>
+                                </ul>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------service----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="Sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Loves to create experiences on web with the versatile technologies like HTML, CSS, JS,
+                    Bootstrap, Node.js, Express.js, MongoDB etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h2>Production Engineer</h2>
+                    <p>Supervising & conducting an analysis of every aspect of a production process and 
+                    recommending improvements in all areas.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="photos/Yelpcamp.n.jpg" alt="">
+                        <div class="layer">
+                            <h3>YelpCamp App</h3>
+                            <p>This is a application that show the best 
+                            campgrounds in all around the world.</p>
+                            <a href="https://pro1-lsms.onrender.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/photo.png" alt="">
+                        <div class="layer">
+                            <h3>Simple Photo-Blog</h3>
+                            <p>This is a application that show the collection 
+                            of photos that I like very most.</p>
+                            <a href="https://jd-techie.github.io/Photo-blog/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/museum.png" alt="">
+                        <div class="layer">
+                            <h3>Candy Shop App</h3>
+                            <p>This is a application that show about the candy 
+                            shop restaurant and their food  menu.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ---------------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-l">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dineshjd11012000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7639918433</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dinesh-j-454a6b237/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jd-techie"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_dinesh_jd04/?theme=dark"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="photos/Dinesh_JD.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="col-r">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" name="email" required>
+                        <textarea name="Message" rows="5" placeholder="You Msg"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p><i class="fa-sharp fa-regular fa-copyright"></i> JD Since 2000 <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0"; 
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/5586eee3ab.js" crossorigin="anonymous"></script>
+</body>
+</html>
