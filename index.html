@@ -74,13 +74,11 @@
                         <ul>
                             <li><span>2021 - 2022</span><br><strong>Graduate Apprentice Trainee - Production </strong><br>
                                 <ul class="ex-1">
-                                    <li>* Maintaining supervision over manufacturing processes to ensure that the quality of work is done in a safe and efficient
-                                        manner.</li>
-                                    <li>* Diagnosing problems with the production line and liaising with other engineers to provide recommendations as to how to
-                                        improve the production process as well as suggestions for developing plans to improve the process.</li>
-                                    <li>* Conducting an analysis of every aspect of a production process and recommending improvements in all areas.</li>
-                                    <li>* As part of the I4 team, I actively participated in I4 activities as well as updated the production data on SAP ME for
-                                        each shift as part of my work.</li></li>
+                                    <li>• Supervised entire production process and maintain quality of work in safe and efficient manner</li>
+                                    <li>• Communicated with other team members to enhance process and performance.</li>
+                                    <li>• Inspected all machines and equipment and provided necessary repairs.</li>
+                                    <li>• Participated in the I4 Team and updated production data on SAP ME on a regular basis.</li>
+                                    <li>• Investigated and proposed corrective actions for quality issues.</li>
                                 </ul>
                         </ul>
                      </div>
@@ -168,12 +166,12 @@
                         <a href="https://github.com/jd-techie"><i class="fa-brands fa-github"></i></a>
                         <a href="https://www.instagram.com/_dinesh_jd04/?theme=dark"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <a href="photos/Dinesh_JD.pdf" download class="btn btn2">Download CV</a>
+                    <a href="photos/Muthu_web.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="col-r">
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" name="email" required>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" name="Email" required>
                         <textarea name="Message" rows="5" placeholder="You Msg"></textarea>
                         <button class="btn btn2">Submit</button>
                     </form>
@@ -207,7 +205,20 @@
             sidemeu.style.right = "-200px";
         }
     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyOpfL4wJw5VUnN84zSxWNlxDRWbnVOe6tceqnGZUbteK0hH8CTd4B0cqhPUXuyD73R/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
     <script src="https://kit.fontawesome.com/5586eee3ab.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
 
