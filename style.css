@@ -298,10 +298,24 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-.col-l p{
+.col-l p {
     margin-top: 30px;
 }
+
 .col-l p i{
+    color: #00334d;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.Email{
+    margin-top: 15px;
+}
+.Email a{
+    text-decoration: none;
+    color: #fff;
+}
+.Email i{
     color: #00334d;
     font-size: 18px;
     margin-right: 15px;
